@@ -5,6 +5,7 @@ const Base = () => {
         <div>
             <p> Hello from base</p>
         </div>
+        
     )
 }
 

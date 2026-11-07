@@ -14,7 +14,7 @@ function App() {
     useEffect(() => {
         const checkBackend = async () => {
             try {
-                const response = await axios.get<HealthResponse>("/api/health");
+                const response = await axios.get<HealthResponse>("/");
                 setHealth(response.data);
             } catch {
                 setError("Unable to connect to backend.");
