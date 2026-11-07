@@ -1,8 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createRoot } from "react-dom/client";
 import Base from './components/base'
-import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
 import Backend from './components/backend.tsx'
 
 function App () {
@@ -16,4 +15,10 @@ function App () {
   );
 }
 
-export default App;
+const rootElement = document.getElementById("root");
+
+if (!rootElement) {
+  throw new Error('Root element "#root" was not found.');
+}
+
+createRoot(rootElement).render(<App />);
