@@ -8,7 +8,7 @@ app.use(express.json());
 
 
 // Routes
-app.get("/api/health", (req,res) => {
+app.get("/", (req,res) => {
     res.status(200).json({
         success: true,
         message: "API dev Workspace backend is Running",
