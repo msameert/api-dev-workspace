@@ -1,15 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { createRoot } from "react-dom/client";
-import Base from './components/base'
 import './index.css'
-import Backend from './components/backend.tsx'
+import Home from './components/home.tsx'
 
 function App () {
   return (
     <BrowserRouter>
        <Routes>
-        <Route path="/"  element={<Base />}  />
-        <Route path="/backend"  element={<Backend />}  />
+        
+        <Route path="/"  element={<Home />}  />
        </Routes>
     </BrowserRouter>
   );
