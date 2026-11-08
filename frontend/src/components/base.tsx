@@ -8,6 +8,7 @@ const Base = () => {
         <div>
             <p> Counter : {counter} </p>
             <button onClick={() => setCounter(counter + 1)}>Press</button>
+            <button onClick={() => setCounter(0)}> Reset </button>
         </div>
         
     )
