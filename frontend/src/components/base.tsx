@@ -1,7 +1,13 @@
+import { useState } from 'react'
+
+
+
 const Base = () => {
+    const[counter, setCounter] = useState(0);
     return (
         <div>
-            <p> Hello from base</p>
+            <p> Counter : {counter} </p>
+            <button onClick={() => setCounter(counter + 1)}>Press</button>
         </div>
         
     )
